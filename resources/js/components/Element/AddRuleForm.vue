@@ -98,10 +98,6 @@ export default {
           element.display = 'inline-block'
         }
       });
-      // if (target.parameters.length === 1) {
-      //   Vue.set(target.parameters[target.parameters.length - 1], 'display', 'inline-block')
-      //   Vue.set(target.parameters[target.parameters.length - 1], 'left', false)
-      // }
     }
   }
 }
