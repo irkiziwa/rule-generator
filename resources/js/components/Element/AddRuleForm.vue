@@ -92,6 +92,16 @@ export default {
 
     removeParameter(target, param_index) {
       target.parameters = target.parameters.filter((param,index) => index !== param_index)
+      target.parameters.forEach((element, index) => {
+        if (index === 0) {
+          element.left = false,
+          element.display = 'inline-block'
+        }
+      });
+      // if (target.parameters.length === 1) {
+      //   Vue.set(target.parameters[target.parameters.length - 1], 'display', 'inline-block')
+      //   Vue.set(target.parameters[target.parameters.length - 1], 'left', false)
+      // }
     }
   }
 }

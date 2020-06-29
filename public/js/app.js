@@ -2016,6 +2016,14 @@ __webpack_require__.r(__webpack_exports__);
       target.parameters = target.parameters.filter(function (param, index) {
         return index !== param_index;
       });
+      target.parameters.forEach(function (element, index) {
+        if (index === 0) {
+          element.left = false, element.display = 'inline-block';
+        }
+      }); // if (target.parameters.length === 1) {
+      //   Vue.set(target.parameters[target.parameters.length - 1], 'display', 'inline-block')
+      //   Vue.set(target.parameters[target.parameters.length - 1], 'left', false)
+      // }
     }
   }
 });
