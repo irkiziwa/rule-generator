@@ -76,25 +76,8 @@ export default {
   },
   methods: {  
     onOk(e) {
-      e.preventDefault()
-      EventBus.fire('formSubmit', {target: this.modalId, event: e})
-    },
-
-    onFormSubmitSuccess(e) {
-      console.log('triggered', e, this.modalId)
-      
-      if (e !== this.modalId) {
-        return
-      }
-
-      this.$bvModal.hide(e)
-
-      this.$bvModal.show(`${this.modalId}-success`)
-    },
-
-    onSuccessOk() {
-      this.$bvModal.hide(`${this.modalId}-success`)
-      EventBus.fire('onSuccessModalOK', this.modalId)
+      // e.preventDefault()
+      // EventBus.fire('formSubmit', {target: this.modalId, event: e})
     },
 
     onCancel(e) {

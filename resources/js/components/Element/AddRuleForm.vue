@@ -52,7 +52,7 @@
     </div>
     <div class="form-group">
       <!-- then revenue is <input type="number" placeholder="0" class="form-control" style="display: inline-block; width: 20%"/> -->
-      <div class="revenue" style="position:relative; display: inline-block; width: 20%">
+      then revenue is <div class="revenue" style="position:relative; display: inline-block; width: 20%">
         <input type="number">
         <span style="position: absolute; top: 5px; right: -30px">%</span>
       </div>

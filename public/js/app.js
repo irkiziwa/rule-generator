@@ -2102,26 +2102,8 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   methods: {
-    onOk: function onOk(e) {
-      e.preventDefault();
-      EventBus.fire('formSubmit', {
-        target: this.modalId,
-        event: e
-      });
-    },
-    onFormSubmitSuccess: function onFormSubmitSuccess(e) {
-      console.log('triggered', e, this.modalId);
-
-      if (e !== this.modalId) {
-        return;
-      }
-
-      this.$bvModal.hide(e);
-      this.$bvModal.show("".concat(this.modalId, "-success"));
-    },
-    onSuccessOk: function onSuccessOk() {
-      this.$bvModal.hide("".concat(this.modalId, "-success"));
-      EventBus.fire('onSuccessModalOK', this.modalId);
+    onOk: function onOk(e) {// e.preventDefault()
+      // EventBus.fire('formSubmit', {target: this.modalId, event: e})
     },
     onCancel: function onCancel(e) {
       EventBus.fire('modalCancel', this.modalId);
@@ -81430,6 +81412,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "form-group" }, [
+      _vm._v("\n    then revenue is "),
       _c(
         "div",
         {
